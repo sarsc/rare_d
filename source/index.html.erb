@@ -1,3 +1,4 @@
+
 <div id="home">
     <div class="bg-image-home" style="background-image: url(<%= image_path 'bg-home.jpg'%>)">
       <div class="text-center">
@@ -5,25 +6,25 @@
         <%= link_to "Test Prototype", "#", class: "btn" %>
       </div>
     </div>
-    <div class="counter-container">
+    <div class="counter-container section-container">
       <div class="counter">
         <p>123345445.4698095.</p>
         <p>Number of babies born with a rare disease today.</p>
       </div>
     </div>
-    <div class="facts-container">
-      <% %w(fact1, fact2, fact3, fact4).each do |fact|%>
+    <div class="facts-container blue-container section-container">
+      <% data.facts.each do |fact|%>
       <div class="fact">
-        <div calss="fact-text">I'm a fact</div>
+        <div calss="fact-text"><%= fact.description %></div>
         <div class="fact-icon"></div>
       </div>
       <% end %>
     </div>
-    <div class="mission-container">
-      Misdiagnosis on rare disease are frequent because physicians often navigate the uknown.
-      We must find ways of reducing the time needed to identify the right diagnosis.
-      Our goal is to increase efficiency and reliability in rare disease diagnosis.
-      Here is how.
+    <div class="mission-container section-container">
+      <p>Misdiagnoses in rare diseases are frequent because physicians often navigate the unknown.</p>
+      <p>We must create solutions to reduce the time needed to find the right diagnosis.</p>
+      <p>Our goal is to increase efficiency and reliability in diagnosing rare diseases.</p>
+      <p>Here is how.</p>
     </div>
     <div class="keys-container">
       <div class="img-key-section">
@@ -31,20 +32,26 @@
       </div>
       <div class="key-words-container">
         <% %w(reliable, fast, informative, intuitive, private).each do |key| %>
-        <p><%= key %></p>
+        <div class="key">
+          <p><%= key %></p>
+        </div>
         <% end %>
       </div>
       <div class="key-description-container">
         <p>I'm here when you hover</p>
       </div>
     </div>
-    <div class="logos-container">
-      <div class="img-logo">Logo1</div>
-      <div class="img-logo">Logo2</div>
-      <div class="img-logo">Logo3</div>
-      <div class="img-logo">Logo4</div>
+    <div class="collabs-container">
+      <p>During our journey, we have collaborated with:</p>
+      <div class="logos-container">
+        <div class="img-logo">Logo1</div>
+        <div class="img-logo">Logo2</div>
+        <div class="img-logo">Logo3</div>
+        <div class="img-logo">Logo4</div>
+      </div>
+
     </div>
-    <div class="form-container">
+    <div class="form-container blue-container section-container">
       <div class="contact-text">
         <p>Let's talk!</p>
         <p>If you are motivated to help rare disease patients and are willing to contribute to Rare Diagnostics’ vision, drop us an email.
