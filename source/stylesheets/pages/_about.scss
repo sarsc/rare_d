@@ -2,7 +2,6 @@
   height: 100vh;
   background-image: $bg-color;
   img {
-    width: 150px;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
   }
 
@@ -15,3 +14,30 @@
   }
 }
 
+.about-section {
+}
+
+.title {
+  color: $main-color;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.image-container {
+  width: 30%;
+}
+
+.bg-img {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.member-description {
+  color: white;
+}
