@@ -1,0 +1,18 @@
+- name: Federico
+  description: "Federico is a Global Health and Social Medicine final year student at King’s College London. Together with his business experience, acquired as an intern for a consulting company in Italy, he has an eclectic entrepreneurial mind formed, in part, at Stanford University: attended for a quarter between the second and third year of university."
+  title: "CEO"
+  image: "./images/federico.jpg"
+  linkedIn: ""
+  xin: ""
+- name: Felix
+  description: "Martin is a medical doctor who graduated from Ludwig Maximilian University of Munich. In addition to his clinical training, he acquired experience in research at the University of California, San Francisco. Through his dissertation that involved complex statistical modelling, he developed a profound knowledge about statistical methods and their applications."
+  title: ""
+  image: "./images/felix.jpg"
+  linkedIn: ""
+  xin: "CTO"
+- name: Martin
+  description: "Martin is a medical doctor and graduated from the Julius Maximilian University of Munich. For his doctoral degree (Dr. med.), he was a researcher at the Technical University of Munich and the University of California San Francisco."
+  title: "COO"
+  image: "./images/martin.jpg"
+  linkedIn: ""
+  xin: ""

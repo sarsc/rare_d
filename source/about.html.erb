@@ -1,24 +1,31 @@
----
-title: Le Wagon - Middleman - About
----
-
 <div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fas fa-heart"></i> by</h1>
-    <ul class="list-inline">
-      <% data.users.each do |user| %>
-        <li>
-          <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
-          <% end %>
-          <h2><%= user.name %></h2>
-          <p>
-            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
-              <i class="fab fa-github"></i> <%= user.github_nickname %>
-            <% end %>
-          </p>
-        </li>
-      <% end %>
-    </ul>
+  <div class="about-container">
+    <div  class="about-section section-container">
+      <div class="title"><h2>our story</h2></div>
+      <div class="text ">
+        <p>
+          Our assisting tool is designed to support physicians and health care providers to help identifying rare disease patients. Nowadays, nearly 400 rare diseases have a therapy.
+        </p>
+        <p>
+          But due to the lack of diagnostic accuracy in these patients, many of them are suffering unnecessarily, because they do not get that treatment they need. We want to change that.
+        </p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="team-container section-container">
+      <div class="title"><h2>our team</h2></div>
+      <div class="images-container">
+        <% data.team.each do |member|%>
+          <div class="bg-img image-container" style="background: url(<%= member.image %>)">
+            <div>
+              <p><%= member.name %></p>
+              <p><%= member.title %></p>
+            </div>
+            <div class="link-social small"></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
