@@ -1,0 +1,27 @@
+.banner, .text-section-left {
+  display: flex;
+}
+
+.banner {
+  justify-content: space-between;
+}
+
+.image-right {
+  img {
+    width: 570px;
+  }
+}
+
+.text-section-left {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    // font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+  }
+  // div {
+  //   height: 0;
+  // }
+}
