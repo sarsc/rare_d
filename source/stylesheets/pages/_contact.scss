@@ -8,16 +8,6 @@
   flex-direction: column;
 }
 
-.form {
-  width: 50%;
-  background-color: #FFF;
-  padding: 30px 50px;
-}
-
-.input {
-  margin: 30px 0;
-}
-
 .logo-large {
   margin-bottom: 30px;
   img{
@@ -25,12 +15,3 @@
   }
 }
 
-.btn-form {
-  background-color: $main-color !important;
-  color: white;
-  padding: 6px 20px;
-}
-
-label {
-  opacity: 0.8;
-}

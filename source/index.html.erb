@@ -33,7 +33,7 @@
       <div class="key-words-container">
         <% %w(reliable, fast, informative, intuitive, private).each do |key| %>
         <div class="key">
-          <p><%= key %></p>
+          <p><%= key.upcase %></p>
         </div>
         <% end %>
       </div>
@@ -44,16 +44,16 @@
     <div class="collabs-container">
       <p>During our journey, we have collaborated with:</p>
       <div class="logos-container">
-        <div class="img-logo">Logo1</div>
-        <div class="img-logo">Logo2</div>
-        <div class="img-logo">Logo3</div>
-        <div class="img-logo">Logo4</div>
+        <div class="img-logo"><%= image_tag 'c-logo1.png' %></div>
+        <div class="img-logo"><%= image_tag 'c-logo2.png' %></div>
+        <div class="img-logo"><%= image_tag 'c-logo3.png' %></div>
+        <div class="img-logo"><%= image_tag 'c-logo4.png' %></div>
       </div>
 
     </div>
-    <div class="form-container blue-container section-container">
+    <div class="contact-container  blue-container section-container">
       <div class="contact-text">
-        <p>Let's talk!</p>
+        <h4>Let's talk!</h4>
         <p>If you are motivated to help rare disease patients and are willing to contribute to Rare Diagnostics’ vision, drop us an email.
         </p>
         <p>
@@ -61,5 +61,8 @@
        </p>
        <!-- TO DO: form here -->
       </div>
+    </div>
+    <div class="form-container">
+      <%= partial "form" %>
     </div>
 </div>
