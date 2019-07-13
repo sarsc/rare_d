@@ -15,16 +15,16 @@
     <div class="facts-container blue-container section-container">
       <% data.facts.each do |fact|%>
           <div class="fact">
-            <div calss="fact-text"><%= fact.description %></div>
-            <div class="fact-icon"></div>
+            <p><%= fact.description %></p>
+            <%= image_tag fact.logo %>
           </div>
       <% end %>
     </div>
-    <div class="mission-container section-container">
+    <div class="mission-container">
       <p>Misdiagnoses in rare diseases are frequent because physicians often navigate the unknown.</p>
       <p>We must create solutions to reduce the time needed to find the right diagnosis.</p>
       <p>Our goal is to increase efficiency and reliability in diagnosing rare diseases.</p>
-      <p>Here is how.</p>
+      <h4>Here is how.</h4>
     </div>
     <div class="keys-container">
       <div class="img-key-section">
