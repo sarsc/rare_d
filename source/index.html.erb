@@ -1,10 +1,10 @@
 
 <div id="home">
-    <div class="bg-image-home" style="background-image: url(<%= image_path 'bg-home.jpg'%>)">
+    <div class="bg-image-home" style="background: linear-gradient(0deg,rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(<%= image_path 'bg-home.jpg'%>)">
       <div class="text-center">
         <h4>Improving accuracy in rare diseases.</h4>
-        <%= link_to "Test Prototype", "#", class: "btn" %>
       </div>
+      <%= link_to "test our prototype", "#", class: "btn btn-white" %>
     </div>
     <div class="counter-container section-container">
       <div class="counter">
@@ -12,13 +12,22 @@
         <p>Number of babies born with a rare disease today.</p>
       </div>
     </div>
-    <div class="facts-container blue-container section-container">
+    <div class="blue-container section-container">
+      <div class="facts-container ">
       <% data.facts.each do |fact|%>
           <div class="fact">
             <p><%= fact.description %></p>
-            <%= image_tag fact.logo %>
+            <!-- <%= image_tag fact.logo %> -->
           </div>
       <% end %>
+
+      </div>
+      <div class="d-flex justify-content-around logo-facts">
+      <% data.facts.each do |fact|%>
+        <%= image_tag fact.logo %>
+      <% end %>
+
+      </div>
     </div>
     <div class="mission-container">
       <p>Misdiagnoses in rare diseases are frequent because physicians often navigate the unknown.</p>
