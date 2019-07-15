@@ -5,11 +5,16 @@
     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
   }
   a {
-    color: rgba(0,0,0,0.25);
-    font-weight: bold;
     letter-spacing: -0.5px;
-    font-size: 15px;
   }
+  p {
+    text-shadow: none;
+    margin: 0;
+  }
+}
+
+.images-container, .image-container, .member-description {
+  display: flex;
 }
 
 .about-section {
@@ -18,19 +23,21 @@
 .title {
   color: $main-color;
   text-transform: uppercase;
-  font-size: 45px;
   margin-bottom: 40px;
   opacity: 0.9;
+  h2 {
+  font-size: 45px;
+  }
 }
 
 .images-container {
-  display: flex;
   justify-content: space-around;
   height: 300px;
 }
 
 .image-container {
   width: 30%;
+  align-items: flex-end;
 }
 
 .bg-img {
@@ -39,5 +46,24 @@
 }
 
 .member-description {
+  justify-content: space-between;
+  width: 100%;
   color: white;
+  margin: 20px;
+  span{
+    padding-left: 10px;
+  }
+}
+
+.contact-link{
+  color: $main-color;
+  text-decoration: none;
+  &:hover{
+   color: $main-color;
+    }
+}
+
+.team-container {
+  margin-top: 140px;
+  margin-bottom: 70px;
 }
