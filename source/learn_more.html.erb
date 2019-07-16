@@ -3,32 +3,34 @@
     <div class="title"><h2>learn more</h2></div>
     <div class="text-container text">
       <p>
-        Our assisting tool is designed to support physicians and health care providers to help identifying rare disease patients. Nowadays, nearly 400 rare diseases have a therapy.
+        Diagnosing a disease is a difficult task. Diagnosing a rare disease can be even more difficult. Nowadays, physicians are not only battling time constraints and massive administrative burdens, they also must take care of an increasing number of patients. As the amount of human disorders and scientific evidence about them is always growing, it is extremely challenging for physicians to stay up to date - especially when it comes to rare diseases. Our technology wants to assist doctors and other healthcare professionals in the diagnosis of rare diseases by providing information exactly where and when it is needed.
       </p>
       <p>
-        But due to the lack of diagnostic accuracy in these patients, many of them are suffering unnecessarily, because they do not get that treatment they need. We want to change that.
+        Our tool is designed to be as intuitive, fast and reliable as possible. When a physician enters the medical history of a patient, including symptoms, lab results or epidemologic data, the tool combines these entries and calculates probabilities for rare diseases in real time. This is done by weighting symptom specificity as well as frequency, merging this with patient-specific data. With every newly entered piece of information, the algorithm adapts its suggestions accordingly.
       </p>
       <p>
-        The European Organization for Rare Diseases (EURORDIS) estimates that as many as 5,000 to 7,000 distinct rare diseases exist. Furthermore, 5 new rare disease are discovered every week.
+        Doctors are then provided with a list of the most likely diagnoses and a brief description of each disorder. The tool will even suggest additional symptoms that often occur in combination with the most likely diagnoses at hand. In this way, physicians can quickly check if they have thought of everything and by adding or ruling out more symptoms, the suggested diagnosis becomes increasingly accurate.
       </p>
       <p>
-        With all of this extensive knowledge about rare diseases, Rare wants to become a reliable, extended arm for physicians to diagnose rare diseases faster and more precise.
-        By analyzing all occuring symptoms of the patient, our tool calculates the most likely diagnoses, based on symptom frequency and specificity.
+        Finally, we provide information on the required steps to confirm the diagnosis according to the latest scientific updates and articles, for example measuring the amount of a certain enzyme or performing genetic testing to look for specific genetic mutations.
+        A key part in battling rare diseases are clinical studies. They help to develop and test new drugs. The difficulty here is to find patients for enrollment. Thus, physicians can find information about ongoing studies and patient organizations for every rare disease in our database. Thus, they can easily pass on this information to the patient, making sure that the quality of treatment and patient’s life is high.
       </p>
       <p>
-        Moreover, the tool will suggest to evaluate other possible symptoms of the patient and gives a direct way to confirm the plausible diagnosis. As nearly 80% of rare disease are caused by a genetic mutation, our tool will provide genetic background information for each disease.
+        To allow our technology to learn from the medical community, we are implementing a feedback mechanism where the performance of our tool can be rated and where physicians can sumbit additional information on each disease. After a validation process by our medical staff, the new information (e.g. assigned symptoms) will be included in our database for future users to benefit.
       </p>
     </div>
   </div>
     <div class="blue-container banner">
       <div class="text-section-left">
         <div>
-          <p>Our prototype will be soon ready to test</p>
-          <p> <%= link_to 'Sign up', 'contact', class: "contact-link link-white" %> to have more information</p>
+          <h3>Help us to make the right diagnosis not so rare anymore.</h3>
+          <p>Our prototype will be ready to test soon.</p>
+          <p> <%= link_to 'Drop us', 'contact', class: "contact-link link-white" %> an email for more information</p>
         </div>
       </div>
       <div class="image-right">
         <%= image_tag 'learn-more.jpg'%>
       </div>
     </div>
+    <%= partial "footer" %>
 </div>
