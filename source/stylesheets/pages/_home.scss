@@ -8,7 +8,7 @@
   }
 
 }
-.keys-container, .facts-container, .text-center, .fact, .bg-image-home, .keys-container, .logos-container {
+.keys-container, .facts-container, .text-center, .fact, .bg-image-home, .keys-container, .logos-container{
   display: flex;
 }
 
@@ -118,6 +118,16 @@
   }
 }
 
+.counter{
+  text-align: center;
+  h4 {
+    padding-top: 70px;
+    font-size: 30px;
+  }
+}
 
-
+.counter-blue{
+  color: $main-color;
+  font-size: 120px;
+}
 

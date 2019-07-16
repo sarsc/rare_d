@@ -20,15 +20,6 @@
 .about-section {
 }
 
-.title {
-  color: $main-color;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  opacity: 0.9;
-  h2 {
-  font-size: 45px;
-  }
-}
 
 .images-container {
   justify-content: space-around;
@@ -60,7 +51,7 @@
   text-decoration: none;
   &:hover{
    color: $main-color;
-    }
+  }
 }
 
 .team-container {
