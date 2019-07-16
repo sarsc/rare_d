@@ -1,18 +1,18 @@
 - name: Federico
   description: "Federico is a recent King’s College London graduate, currently pursuing a Masters degree in entrepreneurial studies at UCL. He further studied at Stanford University, and previously worked in two successful startups."
   title: "CEO"
-  image: "./images/federico.jpg"
+  image: "../images/federico.jpg"
   linkedIn: "./in-logo.svg"
   xing: "./xing-logo.svg"
 - name: Felix
   description: "Felix is a medical doctor graduated from the Julius Maximilian University of Würzburg and also worked at Harvard, Stanford and Yale University. He is a passionate researcher and clinician, particularly interested in personalized medicine and oncology."
   title: "CTO"
-  image: "./images/felix.jpg"
+  image: "../images/felix.jpg"
   linkedIn: "./in-logo.svg"
   xing: "./xing-logo.svg"
 - name: Martin
   description: ""
   title: "COO"
-  image: "./images/martin.jpg"
+  image: "../images/martin.jpg"
   linkedIn: "./in-logo.svg"
   xing: "./xing-logo.svg"
