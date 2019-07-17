@@ -10,7 +10,7 @@
       <div class="counter">
         <div class="counter-blue">123345445.4698095.</div>
         <h4>Number of babies born with a rare disease today.</h4>
-      </div>
+      </dizv>
     </div>
     <div class="blue-container section-container">
       <div class="facts-container ">
@@ -20,13 +20,11 @@
             <!-- <%= image_tag fact.logo %> -->
           </div>
       <% end %>
-
       </div>
       <div class="d-flex justify-content-around logo-facts">
         <% data.facts.each do |fact|%>
           <%= image_tag fact.logo %>
         <% end %>
-
       </div>
     </div>
     <div class="mission-container">
@@ -40,14 +38,19 @@
         <%= image_tag 'laptop.png' %>
       </div>
       <div class="key-words-container">
-        <% %w(reliable, fast, informative, intuitive, private).each do |key| %>
-        <div class="key">
-          <p><%= key.upcase %></p>
-        </div>
+        <% data.key_words.each do |key| %>
+          <div class="key">
+            <p><%= key.key_word.upcase %></p>
+          </div>
         <% end %>
       </div>
       <div class="key-description-container">
-        <p>I'm here when you hover</p>
+        <% data.key_words.each do |key| %>
+          <div id="text-key" class="d-none">
+          <p><%= key.text1 %></p>
+
+          </div>
+        <% end %>
       </div>
     </div>
     <div class="collabs-container">
@@ -58,7 +61,6 @@
         <div class="img-logo"><%= image_tag 'c-logo3.png' %></div>
         <div class="img-logo"><%= image_tag 'c-logo4.png' %></div>
       </div>
-
     </div>
     <div class="contact-container  blue-container section-container">
       <div class="contact-text">

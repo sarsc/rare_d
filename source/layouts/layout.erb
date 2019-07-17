@@ -14,5 +14,35 @@
   <body>
     <%= partial "navbar" %>
     <%= yield %>
+    <script type="text/javascript">
+      var key = document.querySelector('.key');
+      console.log('1')
+      function addTextOnMove() {
+        key.addEventListener("mouseover",function(event) {
+
+        var textKey = document.querySelector('#text-key');
+            textKey.classList.remove("d-none");
+        key.addEventListener("mouseout",function(event) {
+            textKey.classList.add("d-none");
+          })
+      });
+      }
+
+      var navbar = document.querySelector('.navbar-rd');
+      function updateNavbar() {
+        window.addEventListener('scroll', function(event) {
+
+        if ( window.scrollY >= window.innerHeight) {
+          navbar.classList.add('navbar-white')
+        } else {
+          navbar.classList.remove('navbar-white')
+        }
+        }
+          )
+      }
+
+      updateNavbar();
+      addTextOnMove();
+    </script>
   </body>
 </html>

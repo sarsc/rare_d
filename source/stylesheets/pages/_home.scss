@@ -8,7 +8,8 @@
   }
 
 }
-.keys-container, .facts-container, .text-center, .fact, .bg-image-home, .keys-container, .logos-container{
+.keys-container, .facts-container, .text-center, .fact,
+.bg-image-home, .keys-container, .logos-container {
   display: flex;
 }
 
@@ -90,6 +91,11 @@
 }
 .key {
   margin-right: 50px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: $main-color;
+   transform: scale(1.1);
+  }
 }
 
 .logos-container {
@@ -112,7 +118,8 @@
   p {
     // opacity: 0.8;
     font-size: 26px;
-    color: $main-color;
+    color: black;
+    opacity: 0.8;
     margin-left: 50px;
     margin-bottom: 70px;
   }
@@ -131,8 +138,17 @@
   font-size: 120px;
 }
 
-.key-words-container {
-  // display: flex;
-
+.key-description-container {
+  padding-left: 50px;
+  padding-right: 70px;
+  p {
+    font-size: 16px !important;
+  }
 }
 
+.red{
+background: red;
+height: 40px;
+width: 40px;
+
+}

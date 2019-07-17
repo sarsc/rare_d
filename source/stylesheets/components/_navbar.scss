@@ -3,6 +3,7 @@
   background: transparent;
   padding: 10px 30px;
   width: 100%;
+  transition: 0.5s background-color ease;
 }
 
 .navbar-rd .navbar-collapse {
@@ -20,4 +21,14 @@
     color: white !important;
     font-size: 20px;
   }
+}
+
+.navbar-white {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255,0));
+  background-color: #FFF;
+  opacity: 0.90;
+  a {
+    color: $main-color !important;
+  }
+
 }
