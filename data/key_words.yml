@@ -1,5 +1,6 @@
 - key_word: "reliable"
   text1: "Our symptoms-matching technology analyses phenotypes provided by the user, returning the most relevant information to the case, in seconds."
+  class_key: class="key-one"
 - key_word: "fast"
 - key_word: "intuitive"
   text: "hrough our simple design, physicians can finally experience an effortless technology where it is most needed: the clinical practice."

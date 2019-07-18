@@ -10,16 +10,15 @@
       <div class="counter">
         <div class="counter-blue">123345445.4698095.</div>
         <h4>Number of babies born with a rare disease today.</h4>
-      </dizv>
+      </div>
     </div>
     <div class="blue-container section-container">
       <div class="facts-container ">
-      <% data.facts.each do |fact|%>
+        <% data.facts.each do |fact|%>
           <div class="fact">
             <p><%= fact.description %></p>
-            <!-- <%= image_tag fact.logo %> -->
           </div>
-      <% end %>
+        <% end %>
       </div>
       <div class="d-flex justify-content-around logo-facts">
         <% data.facts.each do |fact|%>
@@ -35,7 +34,9 @@
     </div>
     <div class="keys-container">
       <div class="img-key-section">
-        <%= image_tag 'laptop.png' %>
+        <div class="image-half">
+          <%= image_tag 'laptop.png' %>
+        </div>
       </div>
       <div class="key-words-container">
         <% data.key_words.each do |key| %>
@@ -47,8 +48,7 @@
       <div class="key-description-container">
         <% data.key_words.each do |key| %>
           <div id="text-key" class="d-none">
-          <p><%= key.text1 %></p>
-
+            <p <%= key.class_key %> ><%= key.text1 %></p>
           </div>
         <% end %>
       </div>
