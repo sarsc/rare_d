@@ -31,3 +31,10 @@
   }
 }
 
+.contact-link{
+  color: $color-link;
+  text-decoration: none;
+  &:hover{
+   color: $color-link;
+  }
+}

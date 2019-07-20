@@ -17,9 +17,9 @@
   justify-content: space-around;
   align-items: center;
   p {
-    // font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    line-height: 0.9rem;
   }
 
   h3 {
@@ -30,5 +30,8 @@
 
 .link-white {
   color: #FFF;
+  &:hover {
+    color: #FFF;
+  }
 }
 
