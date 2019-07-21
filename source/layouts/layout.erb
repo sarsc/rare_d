@@ -8,41 +8,11 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
     <%= partial "navbar" %>
     <%= yield %>
-    <script type="text/javascript">
-      var key = document.querySelector('.key');
-      console.log('1')
-      function addTextOnMove() {
-        key.addEventListener("mouseover",function(event) {
-
-        var textKey = document.querySelector('#text-key');
-            textKey.classList.remove("d-none");
-        key.addEventListener("mouseout",function(event) {
-            textKey.classList.add("d-none");
-          })
-      });
-      }
-
-      var navbar = document.querySelector('.navbar-rd');
-      function updateNavbar() {
-        window.addEventListener('scroll', function(event) {
-
-        if ( window.scrollY >= window.innerHeight) {
-          navbar.classList.add('navbar-white')
-        } else {
-          navbar.classList.remove('navbar-white')
-        }
-        }
-          )
-      }
-
-      updateNavbar();
-      addTextOnMove();
-    </script>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>

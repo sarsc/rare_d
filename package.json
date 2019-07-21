@@ -1,0 +1,42 @@
+{
+  "name": "rare_d",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development webpack -d --watch --config ./webpack.config.js --color --display-error-details",
+    "build": "NODE_ENV=production webpack -p --config ./webpack.config.js --progress --color --display-error-details --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarsc/rare_d.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarsc/rare_d/issues"
+  },
+  "homepage": "https://github.com/sarsc/rare_d#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
