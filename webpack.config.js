@@ -1,8 +1,9 @@
 const path = require('path');
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    site: ['./source/javascripts/site.js', './source/stylesheets/site.scss']
+    application: ['./source/javascripts/application.js', './source/stylesheets/application.scss']
   },
   module: {
     rules: [
@@ -29,6 +30,13 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
         use: [
+          // {
+          //   loader: MiniCssExtractPlugin.loader,
+          //   options: {
+          //     publicPath: __dirname + '/stylesheets/',
+          //     sourceMap: true
+          //   }
+          // },
           {
             loader: 'style-loader',
             options: {
@@ -57,8 +65,19 @@ module.exports = {
           }
         ]
       },
+      // {
+      //   test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+      //   loader: 'url-loader',
+      //   options: { limit: 1000, name: 'fonts/[name].[ext]', },
+      // },
     ]
   },
+  // plugins: [
+  //   new _MiniCssExtractPlugin({
+  //     filename: 'stylesheets/[name].css',
+  //     // chunkFilename: '[id].css'
+  //   })
+  // ],
   output: {
     filename: 'javascripts/[name].js',
     path: path.resolve(__dirname, '.tmp/dist')
