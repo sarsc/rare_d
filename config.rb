@@ -19,6 +19,7 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
+  deploy.branch = 'gh-pages'
 end
 
 activate :directory_indexes
