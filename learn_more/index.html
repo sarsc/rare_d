@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title></title>
+    <link href="../stylesheets/application-02dccb2d.css" rel="stylesheet" />
+    <script src="../javascripts/application-615b1703.js"></script>
+    <link href="../images/images/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-rd position-fixed">
+<a href="../">    <img src="../images/logo1-345dc23e.png" alt="Logo1" />
+</a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto navbar-links">
+      <li class="nav-item active">
+        <a href="../about/" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="./" class="nav-link">Learn more</a>
+      </li>
+      <li class="nav-item">
+        <a href="../contact/" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="learn-more">
+  <div class="section-container">
+    <div class="title"><h2>learn more</h2></div>
+    <div class="text-container text">
+      <p>
+        Diagnosing a disease is a difficult task. Diagnosing a rare disease can be even more difficult. Nowadays, physicians are not only battling time constraints and massive administrative burdens, they also must take care of an increasing number of patients. As the amount of human disorders and scientific evidence about them is always growing, it is extremely challenging for physicians to stay up to date - especially when it comes to rare diseases. Our technology wants to assist doctors and other healthcare professionals in the diagnosis of rare diseases by providing information exactly where and when it is needed.
+      </p>
+      <p>
+        Our tool is designed to be as intuitive, fast and reliable as possible. When a physician enters the medical history of a patient, including symptoms, lab results or epidemologic data, the tool combines these entries and calculates probabilities for rare diseases in real time. This is done by weighting symptom specificity as well as frequency, merging this with patient-specific data. With every newly entered piece of information, the algorithm adapts its suggestions accordingly.
+      </p>
+      <p>
+        Doctors are then provided with a list of the most likely diagnoses and a brief description of each disorder. The tool will even suggest additional symptoms that often occur in combination with the most likely diagnoses at hand. In this way, physicians can quickly check if they have thought of everything and by adding or ruling out more symptoms, the suggested diagnosis becomes increasingly accurate.
+      </p>
+      <p>
+        Finally, we provide information on the required steps to confirm the diagnosis according to the latest scientific updates and articles, for example measuring the amount of a certain enzyme or performing genetic testing to look for specific genetic mutations.
+        A key part in battling rare diseases are clinical studies. They help to develop and test new drugs. The difficulty here is to find patients for enrollment. Thus, physicians can find information about ongoing studies and patient organizations for every rare disease in our database. Thus, they can easily pass on this information to the patient, making sure that the quality of treatment and patient’s life is high.
+      </p>
+      <p>
+        To allow our technology to learn from the medical community, we are implementing a feedback mechanism where the performance of our tool can be rated and where physicians can sumbit additional information on each disease. After a validation process by our medical staff, the new information (e.g. assigned symptoms) will be included in our database for future users to benefit.
+      </p>
+    </div>
+  </div>
+    <div class="blue-container banner">
+      <div class="text-section-left">
+        <div>
+          <h3>Help us to make the right diagnosis not so rare anymore.</h3>
+          <p>Our prototype will be ready to test soon.</p>
+          <p> <a href="../contact/" class="contact-link link-white">Drop us</a> an email for more information</p>
+        </div>
+      </div>
+      <div class="image-right">
+        <img src="../images/learn-more-601e9856.jpg" alt="Learn more" />
+      </div>
+    </div>
+    <div class="footer">
+  <div style="font-size: 12pX">RARE DIAGNOSTICS</div>
+  <div style="font-size: 10px">Terms and Condition</div>
+  <div>
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-xing"></i>
+  </div>
+</div>
+
+</div>
+
+    <script type="text/javascript">
+      var key = document.querySelector('.key');
+      console.log('1')
+      function addTextOnMove() {
+        key.addEventListener("mouseover",function(event) {
+
+        var textKey = document.querySelector('#text-key');
+            textKey.classList.remove("d-none");
+        key.addEventListener("mouseout",function(event) {
+            textKey.classList.add("d-none");
+          })
+      });
+      }
+
+      var navbar = document.querySelector('.navbar-rd');
+      function updateNavbar() {
+        window.addEventListener('scroll', function(event) {
+
+        if ( window.scrollY >= window.innerHeight) {
+          navbar.classList.add('navbar-white')
+        } else {
+          navbar.classList.remove('navbar-white')
+        }
+        }
+          )
+      }
+
+      updateNavbar();
+      addTextOnMove();
+    </script>
+  </body>
+</html>
