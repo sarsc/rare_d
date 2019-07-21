@@ -2,7 +2,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :sprockets
+config[:js_dir] = 'javascripts'
+config[:css_dir] = 'stylesheets'
+# activate :sprockets
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -30,3 +32,4 @@ activate :external_pipeline,
   "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
   source: ".tmp/dist",
   latency: 1
+
