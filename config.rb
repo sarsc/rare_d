@@ -4,6 +4,7 @@ end
 
 config[:js_dir] = 'javascripts'
 config[:css_dir] = 'stylesheets'
+config[:images_dir] = 'images'
 # activate :sprockets
 
 page '/*.xml', layout: false
