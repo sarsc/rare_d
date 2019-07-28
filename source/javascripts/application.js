@@ -1,7 +1,6 @@
 //= require jquery
-//= require bootstrap
 //= require_tree .
-
+import 'bootstrap'
 import { updateNavbar } from './navbar';
 
 updateNavbar();

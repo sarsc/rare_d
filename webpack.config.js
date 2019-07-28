@@ -1,9 +1,14 @@
+// const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
     application: ['./source/javascripts/application.js', './source/stylesheets/application.scss']
+  },
+  output: {
+    filename: 'javascripts/[name].js',
+    path: path.resolve(__dirname, '.tmp/dist')
   },
   module: {
     rules: [
@@ -12,9 +17,9 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          // options: {
-          //   presets: ['@babel/preset-env']
-          // }
+          options: {
+            "presets": ['@babel/preset-env', 'minify'],
+           }
         }
       },
 
@@ -58,15 +63,20 @@ module.exports = {
         loader: 'url-loader',
         // options: { limit: 8000 },
       },
+
+      {
+        test: /bootstrap\/dist\/js\/umd\//, use: 'imports-loader?jQuery=jquery'
+      }
     ]
   },
    plugins: [
     new MiniCssExtractPlugin({
       filename: 'application.css',
-    })
+    }),
+
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery',
+    //   jQuery: 'jquery',
+    //  }),
   ],
-  output: {
-    filename: 'javascripts/[name].js',
-    path: path.resolve(__dirname, '.tmp/dist')
-  }
 };
