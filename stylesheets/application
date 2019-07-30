@@ -7140,7 +7140,7 @@ label {
     font-size: 20px; }
 
 .keys-container, .facts-container, .text-center, .fact,
-.bg-image-home, .keys-container, .logos-container {
+.bg-image-home, .logos-container, .section-container, .keys-section {
   display: flex; }
 
 .bg-image-home {
@@ -7187,25 +7187,26 @@ label {
     font-size: 40px;
     margin-top: 50px; }
 
-.keys-container {
-  background: #FAFAFA;
-  align-items: center;
-  padding-bottom: 50px; }
-
 .img-key-section {
-  width: 50%; }
-  .img-key-section img {
-    width: 800px; }
+  width: 40%; }
 
-.image-half {
+.keys-section {
+  width: 60%;
+  align-items: center; }
+
+.image-half img {
+  width: 680px;
   position: relative;
   left: -180px; }
 
 .key-words-container {
-  position: relative; }
+  display: flex;
+  width: 20%;
+  align-items: flex-start;
+  flex-direction: column; }
 
 .key {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   transition: all .2s ease-in-out; }
   .key:hover {
     color: #008ED6;
@@ -7244,13 +7245,17 @@ label {
   font-size: 120px; }
 
 .key-description-container {
-  padding-left: 50px;
-  padding-right: 70px; }
+  width: 80%;
+  padding-left: 70px;
+  padding-right: 100px; }
   .key-description-container p {
-    font-size: 16px !important; }
+    font-size: 18px !important; }
 
-.form-home {
-  padding-top: 70px; }
+.key-right {
+  align-self: flex-end; }
+
+.key-center {
+  align-self: center; }
 
 #about {
   height: 100vh;
